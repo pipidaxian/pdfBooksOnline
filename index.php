@@ -7,8 +7,8 @@ include "layout/include/header.php";
 <div class="banar" style="height: 50vh;">
     <div class="overlay"></div>
     <div class="lib-info">
-        <h4>免费下载并弹奏琴谱 </h4>
-        <p>如需新的琴谱，请询问管理员 </p>
+        <h4>免费下载并演奏曲谱 </h4>
+        <p>如需新的曲谱，请询问管理员 </p>
     </div>
 </div>
 <!-- End banar-->
@@ -44,7 +44,7 @@ include "layout/include/header.php";
                                 </h4>
                                 <p class="card-text"><?php echo mb_substr($row[$i]['bookContent'], 0, 150, "UTF-8"); ?></p>
                                 <button class="custom-btn">
-                                    <a href="book.php?id=<?php echo $row[$i]['id']; ?>&&category=<?php echo $row[$i]['bookCat']; ?>">下载琴谱 </a>
+                                    <a href="book.php?id=<?php echo $row[$i]['id']; ?>&&category=<?php echo $row[$i]['bookCat']; ?>">下载曲谱 </a>
                                 </button>
                             </div>
                         </div>
@@ -52,7 +52,7 @@ include "layout/include/header.php";
             <?php
                 }
             } else {
-                echo "没有任何琴谱 ";
+                echo "没有任何曲谱 ";
             }
             ?>
 
