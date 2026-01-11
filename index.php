@@ -7,8 +7,8 @@ include "layout/include/header.php";
 <div class="banar" style="height: 50vh;">
     <div class="overlay"></div>
     <div class="lib-info">
-        <h4>حمّل عشرات الكتب مجانا</h4>
-        <p>من اجل نشر المعرفة والثقافة , وغرس حب القراءة بين المتحدثين باللغة العربية</p>
+        <h4>免费下载并弹奏琴谱</h4>
+        <p>如需新的琴谱，请询问管理员</p>
     </div>
 </div>
 <!-- End banar-->
@@ -44,7 +44,7 @@ include "layout/include/header.php";
                                 </h4>
                                 <p class="card-text"><?php echo mb_substr($row[$i]['bookContent'], 0, 150, "UTF-8"); ?></p>
                                 <button class="custom-btn">
-                                    <a href="book.php?id=<?php echo $row[$i]['id']; ?>&&category=<?php echo $row[$i]['bookCat']; ?>">تحميل الكتاب</a>
+                                    <a href="book.php?id=<?php echo $row[$i]['id']; ?>&&category=<?php echo $row[$i]['bookCat']; ?>">下载琴谱</a>
                                 </button>
                             </div>
                         </div>
@@ -52,7 +52,7 @@ include "layout/include/header.php";
             <?php
                 }
             } else {
-                echo "لا توجد اي كتب";
+                echo "没有任何琴谱";
             }
             ?>
 
@@ -80,7 +80,7 @@ $total_pages = ceil($total_cat / $limit);
                                                                                 echo 1;
                                                                             }
 
-                                                                            ?>">السابق</a></li>
+                                                                            ?>">上一个</a></li>
         <?php
         for ($i = 1; $i <= $total_pages; $i++) {
         ?>
@@ -94,7 +94,7 @@ $total_pages = ceil($total_cat / $limit);
                                                                             } elseif (($page + 1) >= $total_pages) {
                                                                                 echo $total_pages;
                                                                             }
-                                                                            ?>">التالي</a></li>
+                                                                            ?>">下一个</a></li>
     </ul>
 </nav>
 <!-- End pagination -->
