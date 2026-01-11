@@ -49,7 +49,7 @@ if (isset($_GET['categoryName'])) {
                                 </h4>
                                 <p class="card-text"><?php echo mb_substr($row['bookContent'], 0, 150, "UTF-8"); ?></p>
                                 <button class="custom-btn">
-                                    <a href="book.php?id=<?php echo $row['id']; ?>&&category=<?php echo $row['bookCat']; ?>">下载琴谱</a>
+                                    <a href="book.php?id=<?php echo $row['id']; ?>&&category=<?php echo $row['bookCat']; ?>">下载琴谱 </a>
                                 </button>
                             </div>
                         </div>
@@ -79,7 +79,7 @@ if (isset($_GET['categoryName'])) {
                                                                                     echo 1;
                                                                                 }
 
-                                                                                ?>">上一个</a></li>
+                                                                                ?>">上一个 </a></li>
             <?php
             for ($i = 1; $i <= $total_pages; $i++) {
             ?>
@@ -93,7 +93,7 @@ if (isset($_GET['categoryName'])) {
                                                                                 } elseif (($page + 1) >= $total_pages) {
                                                                                     echo $total_pages;
                                                                                 }
-                                                                                ?>">下一个</a></li>
+                                                                                ?>">下一个 </a></li>
         </ul>
     </nav>
     <!-- End pagination -->
@@ -171,7 +171,7 @@ else
                                                                                     echo 1;
                                                                                 }
 
-                                                                                ?>">上一个</a></li>
+                                                                                ?>">上一个 </a></li>
             <?php
             for ($i = 1; $i <= $total_pages; $i++) {
             ?>
@@ -185,7 +185,7 @@ else
                                                                                 } elseif (($page + 1) >= $total_pages) {
                                                                                     echo $total_pages;
                                                                                 }
-                                                                                ?>">下一个</a></li>
+                                                                                ?>">下一个 </a></li>
         </ul>
     </nav>
     <!-- End pagination -->
