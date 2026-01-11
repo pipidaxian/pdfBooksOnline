@@ -38,9 +38,7 @@ require_once 'dashboard/include/connection.php';
                     <li class="navbar-itm">
                         <a href="category.php" class="nav-link">分类 </a>
                     </li>
-                    <li class="navbar-itm">
-                        <a href="#" class="nav-link">联系我们 </a>
-                    </li>
+
 
 
                     <?php
