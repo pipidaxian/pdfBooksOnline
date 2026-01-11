@@ -9,10 +9,10 @@ if (isset($_GET['author'])) {
 <div class="books">
 <div class="container">
     <!--       
-                    هذا الون جميل جدا    
+                    这种颜色非常漂亮    
     <div class="bg-warning"></div> -->
     <div class="author-info bg-secondary text-white p-2 mb-3">
-        <span>جميع كتب</span>
+        <span>所有书籍</span>
         <span><?php echo $bookAuthor;?></span>
     </div>
     <div class="row">
@@ -42,7 +42,7 @@ if (isset($_GET['author'])) {
                         </h4>
                         <p class="card-text"><?php echo mb_substr($row['bookContent'], 0, 150, "UTF-8"); ?></p>
                         <button class="custom-btn">
-                            <a href="book.php?id=<?php echo $row['id'];?>&&category=<?php echo $row['bookCat'];?>">تحميل الكتاب</a>
+                            <a href="book.php?id=<?php echo $row['id'];?>&&category=<?php echo $row['bookCat'];?>">下载书籍</a>
                         </button>
                     </div>
                 </div>
@@ -68,7 +68,7 @@ if (isset($_GET['author'])) {
                                                                                     echo 1;
                                                                                 }
 
-                                                                                ?>">السابق</a></li>
+                                                                                ?>">上一个</a></li>
             <?php
             for ($i = 1; $i <= $total_pages; $i++) {
             ?>
@@ -82,7 +82,7 @@ if (isset($_GET['author'])) {
                                                                                 } elseif (($page + 1) >= $total_pages) {
                                                                                     echo $total_pages;
                                                                                 }
-                                                                                ?>">التالي</a></li>
+                                                                                ?>">下一个</a></li>
         </ul>
     </nav>
     <!-- End pagination -->
