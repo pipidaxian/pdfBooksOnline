@@ -14,10 +14,10 @@ if (isset($_GET['categoryName'])) {
     <div class="books">
         <div class="container">
             <!--       
-                    هذا الون جميل جدا    
+                    这种颜色非常漂亮    
     <div class="bg-warning"></div> -->
             <div class="bg-secondary text-white p-2 mb-3">
-                <h4><span>تصنيف: </span>
+                <h4><span>分类： </span>
                     <span><?php echo $categoryName; ?></span>
                 </h4>
             </div>
@@ -49,7 +49,7 @@ if (isset($_GET['categoryName'])) {
                                 </h4>
                                 <p class="card-text"><?php echo mb_substr($row['bookContent'], 0, 150, "UTF-8"); ?></p>
                                 <button class="custom-btn">
-                                    <a href="book.php?id=<?php echo $row['id']; ?>&&category=<?php echo $row['bookCat']; ?>">تحميل الكتاب</a>
+                                    <a href="book.php?id=<?php echo $row['id']; ?>&&category=<?php echo $row['bookCat']; ?>">下载书籍</a>
                                 </button>
                             </div>
                         </div>
@@ -79,7 +79,7 @@ if (isset($_GET['categoryName'])) {
                                                                                     echo 1;
                                                                                 }
 
-                                                                                ?>">السابق</a></li>
+                                                                                ?>">上一个</a></li>
             <?php
             for ($i = 1; $i <= $total_pages; $i++) {
             ?>
@@ -93,7 +93,7 @@ if (isset($_GET['categoryName'])) {
                                                                                 } elseif (($page + 1) >= $total_pages) {
                                                                                     echo $total_pages;
                                                                                 }
-                                                                                ?>">التالي</a></li>
+                                                                                ?>">下一个</a></li>
         </ul>
     </nav>
     <!-- End pagination -->
@@ -104,11 +104,11 @@ if (isset($_GET['categoryName'])) {
 else{
 ?>
 <div class="bg-secondary text-white p-2 mb-3">
-                <h4><span>تصنيف: </span>
+                <h4><span>分类： </span>
                     <span><?php echo $categoryName; ?></span>
                 </h4>
             </div>
-<div class="alert alert-danger">لا تتوفر كتب من تصنيف <span><?php echo $categoryName; ?></span> في الوقت الحالي</div>
+<div class="alert alert-danger">没有该类别的书籍 <span><?php echo $categoryName; ?></span>当前 </div>
 <?php
 } 
 }
