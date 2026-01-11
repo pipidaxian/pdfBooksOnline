@@ -29,12 +29,12 @@ if (!isset($_SESSION['adminInfo'])) {
             <table class="table">
                 <thead class="thead-dark">
                     <tr>
-                        <th scope="col">数字 </th>
+                        <th scope="col">ID </th>
                         <th scope="col">书名 </th>
                         <th scope="col">作者</th>
                         <th scope="col">分类 </th>
                         <th scope="col">添加日期 </th>
-                        <th scope="col">程序 </th>
+                        <th scope="col">记录 </th>
                     </tr>
                 </thead>
                 <tbody>
