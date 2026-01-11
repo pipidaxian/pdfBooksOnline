@@ -32,7 +32,7 @@ if (!isset($_SESSION['adminInfo'])) {
         } elseif (empty($imageName)) {
             $error = "<div class='alert alert-danger'>" . "请选一张合适的图片 " . "</div>";
         } elseif (empty($bookName)) {
-            $error = "<div class='alert alert-danger'>" . "请选择琴谱文件 " . "</div>";
+            $error = "<div class='alert alert-danger'>" . "请选择曲谱文件 " . "</div>";
         } else {
             // Book cover
             $bookCover = rand(0, 1000) . "_" . $imageName;
@@ -52,7 +52,7 @@ if (!isset($_SESSION['adminInfo'])) {
             $stmt = $con->prepare($query);
             $res = $stmt->execute();
             if (isset($res)) {
-                $success = "<div class='alert alert-success'>" . "琴谱已成功添加 " . "</div>";
+                $success = "<div class='alert alert-success'>" . "曲谱已成功添加 " . "</div>";
             }
         }
     }
@@ -102,7 +102,7 @@ if (!isset($_SESSION['adminInfo'])) {
                     <input type="file" class="form-control" name="bookCover">
                 </div>
                 <div class="form-group">
-                    <label for="img">琴谱 </label>
+                    <label for="img">曲谱 </label>
                     <input type="file" class="form-control" name="book">
                 </div>
                 <div class="form-group">
