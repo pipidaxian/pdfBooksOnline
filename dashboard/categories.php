@@ -68,10 +68,10 @@ if (!isset($_SESSION['adminInfo'])) {
         <table class="table">
           <thead class="thead-dark">
             <tr>
-              <th scope="col">الرقم</th>
-              <th scope="col">عنوان التصنيف</th>
-              <th scope="col">تاريخ الإضافة</th>
-              <th scope="col">الإجراء</th>
+              <th scope="col">ID</th>
+              <th scope="col">分类 </th>
+              <th scope="col">添加日期 </th>
+              <th scope="col">记录 </th>
             </tr>
           </thead>
           <tbody>
