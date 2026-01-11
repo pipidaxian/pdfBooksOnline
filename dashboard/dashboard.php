@@ -25,7 +25,7 @@ if (!isset($_SESSION['adminInfo'])) {
               $bookNum = $stmt->rowCount();
               ?>
               <h3><?php echo $bookNum; ?></h3>
-              <p>书的数量 </p>
+              <p>琴谱数量 </p>
             </div>
           </div>
           <div class="col-sm-6">
@@ -54,7 +54,7 @@ if (!isset($_SESSION['adminInfo'])) {
               <thead class="thead-dark">
                 <tr>
                   <th scope="col">ID </th>
-                  <th scope="col">书名 </th>
+                  <th scope="col">曲名 </th>
                   <th scope="col">作者 </th>
                   <th scope="col">分类 </th>
                   <th scope="col">添加日期 </th>
