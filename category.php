@@ -49,7 +49,7 @@ if (isset($_GET['categoryName'])) {
                                 </h4>
                                 <p class="card-text"><?php echo mb_substr($row['bookContent'], 0, 150, "UTF-8"); ?></p>
                                 <button class="custom-btn">
-                                    <a href="book.php?id=<?php echo $row['id']; ?>&&category=<?php echo $row['bookCat']; ?>">下载琴谱 </a>
+                                    <a href="book.php?id=<?php echo $row['id']; ?>&&category=<?php echo $row['bookCat']; ?>">下载曲谱 </a>
                                 </button>
                             </div>
                         </div>
@@ -108,7 +108,7 @@ else{
                     <span><?php echo $categoryName; ?></span>
                 </h4>
             </div>
-<div class="alert alert-danger">没有该类别的琴谱 <span><?php echo $categoryName; ?></span>当前 </div>
+<div class="alert alert-danger">没有该类别的曲谱 <span><?php echo $categoryName; ?></span>当前 </div>
 <?php
 } 
 }
