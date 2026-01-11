@@ -85,7 +85,7 @@
         <input type="text" class="form-control"  id="mail" name="adminInfo"/>
       </div>
       <div class="form-group">
-        <label for="pass">كلمة السر</label>
+        <label for="pass">密码 </label>
         <input type="password" class="form-control"  id="pass" name="password"/>
       </div>
       <button class="custom-btn" name="log">登录 </button>
