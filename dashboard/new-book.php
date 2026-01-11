@@ -108,7 +108,7 @@ if (!isset($_SESSION['adminInfo'])) {
                                                                                                     echo $bookContent;
                                                                                                 } ?></textarea>
                 </div>
-                <button class="custom-btn">نشر الكتاب</button>
+                <button class="custom-btn">出版 </button>
             </form>
         </div>
         <!-- End new book -->
