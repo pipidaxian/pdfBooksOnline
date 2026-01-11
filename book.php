@@ -29,7 +29,7 @@
                             <hr/>
                             <p><?php echo $row['bookContent']; ?></p>
                             <button class="custom-btn" style="width: 160px;">
-                                <a href="uploads/books/<?php echo $row['book']; ?>" download>下载琴谱 </a>
+                                <a href="uploads/books/<?php echo $row['book']; ?>" download>下载曲谱 </a>
                             </button>
                         </div>
                     </div>
@@ -42,7 +42,7 @@
     <!-- Start Related Books -->
    <div class="related-books">
     <div class="container">
-        <h4>كتب ذات صلة</h4>
+        <h4>相关曲谱 </h4>
         <hr/>
         <div class="row">
             <?php
@@ -75,7 +75,7 @@
                                     <a href="book.php?id=<?php echo $row['id']; ?>&&category=<?php echo $row['bookCat']; ?>"><?php echo $row['bookTitle']; ?></a>
                                 </h4>
                                 <button class="custom-btn">
-                                    <a href="book.php?id=<?php echo $row['id']; ?>&&category=<?php echo $row['bookCat']; ?>">下载琴谱 </a>
+                                    <a href="book.php?id=<?php echo $row['id']; ?>&&category=<?php echo $row['bookCat']; ?>">下载曲谱 </a>
                                 </button>
                             </div>
                         </div>
