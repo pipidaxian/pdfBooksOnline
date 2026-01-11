@@ -29,7 +29,7 @@
                             <hr/>
                             <p><?php echo $row['bookContent']; ?></p>
                             <button class="custom-btn" style="width: 160px;">
-                                <a href="uploads/books/<?php echo $row['book']; ?>" download>下载书籍</a>
+                                <a href="uploads/books/<?php echo $row['book']; ?>" download>下载琴谱</a>
                             </button>
                         </div>
                     </div>
@@ -75,7 +75,7 @@
                                     <a href="book.php?id=<?php echo $row['id']; ?>&&category=<?php echo $row['bookCat']; ?>"><?php echo $row['bookTitle']; ?></a>
                                 </h4>
                                 <button class="custom-btn">
-                                    <a href="book.php?id=<?php echo $row['id']; ?>&&category=<?php echo $row['bookCat']; ?>">下载书籍</a>
+                                    <a href="book.php?id=<?php echo $row['id']; ?>&&category=<?php echo $row['bookCat']; ?>">下载琴谱</a>
                                 </button>
                             </div>
                         </div>
@@ -114,7 +114,7 @@
                                                                                     echo 1;
                                                                                 }
 
-                                                                                ?>">السابق</a></li>
+                                                                                ?>">上一个</a></li>
             <?php
             for ($i = 1; $i <= $total_pages; $i++) {
             ?>
