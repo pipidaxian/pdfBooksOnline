@@ -14,7 +14,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>تسجيل الدخول</title>
+    <title>登录 </title>
     <!-- Bootstrap and Bootstrap Rtl -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/bootstrap-rtl.css">
@@ -56,7 +56,7 @@
 
       if(empty($adminInfo) || empty($adminPass))
         {
-          echo "<div class = 'alert alert-danger'>"."الرجاء ملء الحقول أدناه"."</div>";
+          echo "<div class = 'alert alert-danger'>"."请填写以下字段 "."</div>";
         }
         else{
           $stmt = $con->prepare("SELECT * FROM admin WHERE (adminName = '$adminInfo' OR adminEmail = '$adminInfo') AND adminPass = '$adminPass'");
@@ -66,7 +66,7 @@
             header('Location:dashboard.php');
           }
            else{
-            echo "<div class = 'alert alert-danger'>"."البيانات غير متطابقة الرجاء المحاولة مرة اخرى"."</div>";
+            echo "<div class = 'alert alert-danger'>"."数据不匹配，请再试一次 "."</div>";
            } 
         
         }
@@ -79,16 +79,16 @@
    
    ?>
     <form action="<?php echo $_SERVER['PHP_SELF'];?>" method="POST">
-      <h5>تسجيل الدخول</h5>
+      <h5>登录 </h5>
       <div class="form-group">
-        <label for="mail"> إسم المستخدم أو البريد الإلكتروني</label>
+        <label for="mail">用户名或电子邮件 </label>
         <input type="text" class="form-control"  id="mail" name="adminInfo"/>
       </div>
       <div class="form-group">
         <label for="pass">كلمة السر</label>
         <input type="password" class="form-control"  id="pass" name="password"/>
       </div>
-      <button class="custom-btn" name="log">تسجيل الدخول</button>
+      <button class="custom-btn" name="log">登录 </button>
     </form>
   </div>
 
