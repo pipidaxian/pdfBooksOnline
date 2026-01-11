@@ -26,7 +26,7 @@
         <a href="dashboard.php" class="list-group-item list-group-item-action bg-light">概览 </a>
         <a href="profile.php" class="list-group-item list-group-item-action bg-light">个人资料 </a>
         <a href="categories.php" class="list-group-item list-group-item-action bg-light">分类 </a>
-        <a href="#" class="list-group-item list-group-item-action bg-light" data-toggle="collapse" data-target="#menu">الكتب</a>
+        <a href="#" class="list-group-item list-group-item-action bg-light" data-toggle="collapse" data-target="#menu">曲谱 </a>
         <!-- Collapse menu -->
         <ul class="collapse sub-menu" id="menu">
           <a href="new-book.php" class="list-group-item list-group-item-action bg-light">新曲谱 </a>
@@ -47,7 +47,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
             <li class="nav-item active">
-              <a class="nav-link" href="../index.php" target="_blank">导航链接 <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="../index.php" target="_blank">主页 <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
