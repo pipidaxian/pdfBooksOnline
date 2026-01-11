@@ -25,7 +25,7 @@ if (!isset($_SESSION['adminInfo'])) {
               $bookNum = $stmt->rowCount();
               ?>
               <h3><?php echo $bookNum; ?></h3>
-              <p>عدد الكتب</p>
+              <p>书的数量 </p>
             </div>
           </div>
           <div class="col-sm-6">
@@ -36,7 +36,7 @@ if (!isset($_SESSION['adminInfo'])) {
               $catNum = $stmt->rowCount();
               ?>
               <h3><?php echo $catNum; ?></h3>
-              <p>عدد التصنيفات</p>
+              <p>分类数量 </p>
             </div>
 
           </div>
@@ -53,11 +53,11 @@ if (!isset($_SESSION['adminInfo'])) {
             <table class="table">
               <thead class="thead-dark">
                 <tr>
-                  <th scope="col">الرقم</th>
-                  <th scope="col">عنوان الكتاب</th>
-                  <th scope="col">المؤلف</th>
-                  <th scope="col">التصنيف</th>
-                  <th scope="col">تاريخ الإضافة</th>
+                  <th scope="col">ID </th>
+                  <th scope="col">书名 </th>
+                  <th scope="col">作者 </th>
+                  <th scope="col">分类 </th>
+                  <th scope="col">添加日期 </th>
                 </tr>
               </thead>
               <tbody>
