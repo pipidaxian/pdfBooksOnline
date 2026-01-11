@@ -30,7 +30,7 @@ if (!isset($_SESSION['adminInfo'])) {
   if($_SERVER['REQUEST_METHOD'] == 'POST'){
     $category = $_POST['category'];
     if(empty($category)){
-      $catError = "<div class = 'alert alert-danger'>"."الرجاء ملء الحقل أدناه"."</div>";
+      $catError = "<div class = 'alert alert-danger'>"."请填写下面的字段 "."</div>";
     }
     else{
       $stmt = $con->prepare("INSERT INTO `categories` (`id`, `categoryName`, `categoryDate`) VALUES (NULL, '$category', current_timestamp())");
@@ -61,7 +61,7 @@ if (!isset($_SESSION['adminInfo'])) {
             <label for="cat">添加分类： </label>
             <input type="text" id="cat" class="form-control" name="category">
           </div>
-          <button class="custom-btn">إضافة</button>
+          <button class="custom-btn">添加 </button>
         </form>
       </div>
       <div class="show-cat">
