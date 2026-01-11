@@ -28,11 +28,11 @@ if (!isset($_SESSION['adminInfo'])) {
         $bookTmp = $_FILES['book']['tmp_name'];
 
         if (empty($bookTitle) || empty($bookAuthor) || empty($bookCat) || empty($bookContent)) {
-            $error = "<div class='alert alert-danger'>" . "الرجاء ملء الحقول أدناه" . "</div>";
+            $error = "<div class='alert alert-danger'>" . "请填写以下字段 " . "</div>";
         } elseif (empty($imageName)) {
-            $error = "<div class='alert alert-danger'>" . "الرجاء إختيار صورة مناسبة" . "</div>";
+            $error = "<div class='alert alert-danger'>" . "请选一张合适的图片 " . "</div>";
         } elseif (empty($bookName)) {
-            $error = "<div class='alert alert-danger'>" . "الرجاء إختيار ملف الكتاب" . "</div>";
+            $error = "<div class='alert alert-danger'>" . "请选择琴谱文件 " . "</div>";
         } else {
             // Book cover
             $bookCover = rand(0, 1000) . "_" . $imageName;
@@ -52,7 +52,7 @@ if (!isset($_SESSION['adminInfo'])) {
             $stmt = $con->prepare($query);
             $res = $stmt->execute();
             if (isset($res)) {
-                $success = "<div class='alert alert-success'>" . "تم إضافة الكتاب بنجاح" . "</div>";
+                $success = "<div class='alert alert-success'>" . "琴谱已成功添加 " . "</div>";
             }
         }
     }
@@ -71,19 +71,19 @@ if (!isset($_SESSION['adminInfo'])) {
             ?>
             <form action="<?php echo $_SERVER['PHP_SELF'] ?>" method="POST" enctype="multipart/form-data">
                 <div class="form-group">
-                    <label for="title">عنوان الكتاب</label>
+                    <label for="title">书名 </label>
                     <input type="text" id="title" class="form-control" name="bookTitle" value="<?php if (isset($bookTitle)) {
                                                                                                     echo $bookTitle;
                                                                                                 } ?>">
                 </div>
                 <div class="form-group">
-                    <label for="author">إسم الكاتب</label>
+                    <label for="author">作者 </label>
                     <input type="text" id="author" class="form-control" name="authorName" value="<?php if (isset($bookAuthor)) {
                                                                                                         echo $bookAuthor;
                                                                                                     } ?>">
                 </div>
                 <div class="form-group">
-                    <label for="title">التصنيف</label>
+                    <label for="title">分类 </label>
                     <select class="form-control" name="bookCat">
                         <option></option>
                         <?php
@@ -98,20 +98,20 @@ if (!isset($_SESSION['adminInfo'])) {
                     </select>
                 </div>
                 <div class="form-group">
-                    <label for="img">غلاف الكتاب</label>
+                    <label for="img">封面 </label>
                     <input type="file" class="form-control" name="bookCover">
                 </div>
                 <div class="form-group">
-                    <label for="img">ملف الكتاب</label>
+                    <label for="img">琴谱 </label>
                     <input type="file" class="form-control" name="book">
                 </div>
                 <div class="form-group">
-                    <label for="img">نبذة عن الكتاب</label>
+                    <label for="img">关于 </label>
                     <textarea name="bookContent" id="" cols="30" rows="10" class="form-control"><?php if (isset($bookContent)) {
                                                                                                     echo $bookContent;
                                                                                                 } ?></textarea>
                 </div>
-                <button class="custom-btn">نشر الكتاب</button>
+                <button class="custom-btn">出版 </button>
             </form>
         </div>
         <!-- End new book -->
