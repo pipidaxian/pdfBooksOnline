@@ -11,7 +11,7 @@ if (isset($_GET['search'])) {
     if ($stmt->rowCount() > 0) {
 ?>
 <div class="search-info bg-secondary text-white p-2 mb-3">
-        <span>نتائج البحث عن:  </span>
+        <span>搜索结果： </span>
         <span><?php echo $search;?></span>
     </div>
     <div class="row">
@@ -39,7 +39,7 @@ if (isset($_GET['search'])) {
                         </h4>
                         <p class="card-text"><?php echo mb_substr($row['bookContent'], 0, 150, "UTF-8"); ?></p>
                         <button class="custom-btn">
-                            <a href="book.php?id=<?php echo $row['id'];?>&&category=<?php echo $row['bookCat'];?>">تحميل الكتاب</a>
+                            <a href="book.php?id=<?php echo $row['id'];?>&&category=<?php echo $row['bookCat'];?>">下载琴谱 </a>
                         </button>
                     </div>
                 </div>
@@ -65,7 +65,7 @@ if (isset($_GET['search'])) {
                                                                                     echo 1;
                                                                                 }
 
-                                                                                ?>">السابق</a></li>
+                                                                                ?>">上一个 </a></li>
             <?php
             for ($i = 1; $i <= $total_pages; $i++) {
             ?>
@@ -79,7 +79,7 @@ if (isset($_GET['search'])) {
                                                                                 } elseif (($page + 1) >= $total_pages) {
                                                                                     echo $total_pages;
                                                                                 }
-                                                                                ?>">التالي</a></li>
+                                                                                ?>">下一个 </a></li>
         </ul>
     </nav>
     <!-- End pagination -->
@@ -90,7 +90,7 @@ if (isset($_GET['search'])) {
                  else {
 ?>
 
-<div class="alert alert-danger">للاسف لم يتم العثور على اسم الكتاب او الكاتب</div>
+<div class="alert alert-danger">很遗憾，未找到书名或作者 </div>
 
 <?php
 
