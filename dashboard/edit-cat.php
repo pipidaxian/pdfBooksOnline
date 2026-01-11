@@ -39,10 +39,10 @@ if (!isset($_SESSION['adminInfo'])) {
         <div class="edit-cat">
             <form action="edit-cat.php?id=<?php echo $row['id']; ?>" method="POST">
                 <div class="form-group">
-                    <label for="cat">تعديل التصنيف</label>
+                    <label for="cat">修改分类 </label>
                     <input type="text" class="form-control" id="cat" value="<?php echo $row['categoryName']; ?>" name="category">
                 </div>
-                <button class="custom-btn">تعديل</button>
+                <button class="custom-btn">修改 </button>
             </form>
         </div>
     </div>
