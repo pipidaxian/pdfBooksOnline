@@ -29,7 +29,7 @@
                             <hr/>
                             <p><?php echo $row['bookContent']; ?></p>
                             <button class="custom-btn" style="width: 160px;">
-                                <a href="uploads/books/<?php echo $row['book']; ?>" download>تحميل الكتاب</a>
+                                <a href="uploads/books/<?php echo $row['book']; ?>" download>下载书籍</a>
                             </button>
                         </div>
                     </div>
@@ -75,7 +75,7 @@
                                     <a href="book.php?id=<?php echo $row['id']; ?>&&category=<?php echo $row['bookCat']; ?>"><?php echo $row['bookTitle']; ?></a>
                                 </h4>
                                 <button class="custom-btn">
-                                    <a href="book.php?id=<?php echo $row['id']; ?>&&category=<?php echo $row['bookCat']; ?>">تحميل الكتاب</a>
+                                    <a href="book.php?id=<?php echo $row['id']; ?>&&category=<?php echo $row['bookCat']; ?>">下载书籍</a>
                                 </button>
                             </div>
                         </div>
@@ -128,7 +128,7 @@
                                                                                 } elseif (($page + 1) >= $total_pages) {
                                                                                     echo $total_pages;
                                                                                 }
-                                                                                ?>">التالي</a></li>
+                                                                                ?>">下一个</a></li>
         </ul>
     </nav>
     <!-- End pagination -->
