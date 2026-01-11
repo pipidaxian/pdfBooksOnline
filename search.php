@@ -39,7 +39,7 @@ if (isset($_GET['search'])) {
                         </h4>
                         <p class="card-text"><?php echo mb_substr($row['bookContent'], 0, 150, "UTF-8"); ?></p>
                         <button class="custom-btn">
-                            <a href="book.php?id=<?php echo $row['id'];?>&&category=<?php echo $row['bookCat'];?>">下载琴谱 </a>
+                            <a href="book.php?id=<?php echo $row['id'];?>&&category=<?php echo $row['bookCat'];?>">下载曲谱 </a>
                         </button>
                     </div>
                 </div>
@@ -90,7 +90,7 @@ if (isset($_GET['search'])) {
                  else {
 ?>
 
-<div class="alert alert-danger">很遗憾，未找到书名或作者 </div>
+<div class="alert alert-danger">很遗憾，未找到曲谱或作者 </div>
 
 <?php
 
