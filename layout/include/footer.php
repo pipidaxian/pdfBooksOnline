@@ -1,6 +1,6 @@
 
     <!-- Start Footer-->
-    <footer class="text-center">جميع الحقوق محفوظة &copy; 2022</footer>
+    <footer class="text-center">版权所有 &copy; 2026</footer>
     <!-- End Footer-->
 
     <!-- jQuery-->
