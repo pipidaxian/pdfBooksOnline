@@ -41,18 +41,18 @@ else{
         <div class="profile">
             <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST">
                 <div class="form-group">
-                    <label for="name">الإسم</label>
+                    <label for="name">姓名 </label>
                     <input type="text" class="form-control" id="name" value="<?php  echo $row[0]['adminName']; ?>" name="adminName">
                 </div>
                 <div class="form-group">
-                    <label for="email">البريد الإلكتروني</label>
+                    <label for="email">电子邮件 </label>
                     <input type="text" class="form-control" id="email"  value="<?php  echo $row[0]['adminEmail']; ?>" name="adminEmail">
                 </div>
                 <div class="form-group">
-                    <label for="pass">كلمة السر</label>
+                    <label for="pass">密码 </label>
                     <input type="text" class="form-control" id="pass"  value="<?php  echo $row[0]['adminPass']; ?>" name="adminPass">
                 </div>
-                <button class="custom-btn" name="edit">تعديل البيانات</button>
+                <button class="custom-btn" name="edit">编辑资料 </button>
             </form>
         </div>
     </div>
