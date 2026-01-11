@@ -20,7 +20,7 @@ if (!isset($_SESSION['adminInfo'])) {
     $id = $_GET['id'];
     $stmt = $con->prepare("DELETE FROM categories WHERE id = '$id'");
       $stmt->execute();
-      $deleteSuccess = "<div class = 'alert alert-success'>"."تم حذف التصنيف بنجاح"."</div>";
+      $deleteSuccess = "<div class = 'alert alert-success'>"."分类已成功删除 "."</div>";
 
   }
   ?>
@@ -35,7 +35,7 @@ if (!isset($_SESSION['adminInfo'])) {
     else{
       $stmt = $con->prepare("INSERT INTO `categories` (`id`, `categoryName`, `categoryDate`) VALUES (NULL, '$category', current_timestamp())");
       $stmt->execute();
-      $catSuccess = "<div class = 'alert alert-success'>"."تم اضافة التصنيف بنجاح"."</div>";
+      $catSuccess = "<div class = 'alert alert-success'>"."已成功添加分类 "."</div>";
     }
   }
   
@@ -58,7 +58,7 @@ if (!isset($_SESSION['adminInfo'])) {
       <div class="add-cat">
         <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST">
           <div class="form-group">
-            <label for="cat">إضافة تصنيف :</label>
+            <label for="cat">添加分类： </label>
             <input type="text" id="cat" class="form-control" name="category">
           </div>
           <button class="custom-btn">إضافة</button>
@@ -101,8 +101,8 @@ if (!isset($_SESSION['adminInfo'])) {
                 <td><?php echo $row[$sNo]['categoryName']; ?></td>
                 <td><?php echo $row[$sNo]['categoryDate']; ?></td>
                 <td>
-                  <a href="edit-cat.php?id=<?php echo $row[$sNo]['id']; ?>" class="custom-btn">تعديل</a>
-                  <a href="categories.php?id=<?php echo $row[$sNo]['id']; ?>" class="custom-btn confirm">حذف</a>
+                  <a href="edit-cat.php?id=<?php echo $row[$sNo]['id']; ?>" class="custom-btn">修改 </a>
+                  <a href="categories.php?id=<?php echo $row[$sNo]['id']; ?>" class="custom-btn confirm">删除 </a>
                 </td>
               </tr>
             <?php
@@ -127,7 +127,7 @@ if (!isset($_SESSION['adminInfo'])) {
                                                                                     echo 1;
                                                                                   }
 
-                                                                                  ?>">السابق</a></li>
+                                                                                  ?>">上一个 </a></li>
             <?php
             for ($i = 1; $i <= $total_pages; $i++) {
             ?>
@@ -141,7 +141,7 @@ if (!isset($_SESSION['adminInfo'])) {
                                                                                   } elseif (($page + 1) >= $total_pages) {
                                                                                     echo $total_pages;
                                                                                   }
-                                                                                  ?>">التالي</a></li>
+                                                                                  ?>">下一个 </a></li>
           </ul>
         </nav>
         <!-- End pagination -->
