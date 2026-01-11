@@ -15,7 +15,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>تسجيل الدخول</title>
+    <title>登录 </title>
     <!-- Bootstrap and Bootstrap Rtl -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/bootstrap-rtl.css">
@@ -59,7 +59,7 @@
 
       if(empty($adminEmail))
         {
-          echo "<div class = 'alert alert-danger'>"."الرجاء ملء الحقل أدناه"."</div>";
+          echo "<div class = 'alert alert-danger'>"."请填写以下字段 "."</div>";
         }
         else{
           $stmt = $con->prepare("SELECT * FROM admin WHERE adminEmail = '$adminEmail'");
@@ -69,7 +69,7 @@
             header('Location:dashboard/index.php');
           }
            else{
-            echo "<div class = 'alert alert-danger'>"."البريد الإلكتروني غير صحيح"."</div>";
+            echo "<div class = 'alert alert-danger'>"."电子邮件不正确 "."</div>";
            } 
         
         }
@@ -82,12 +82,12 @@
    
    ?>
     <form action="<?php echo $_SERVER['PHP_SELF'];?>" method="POST">
-      <h5>تسجيل الدخول</h5>
+      <h5>登录 </h5>
       <div class="form-group">
-        <label for="mail"> البريد الإلكتروني</label>
+        <label for="mail">电子邮件 </label>
         <input type="text" class="form-control"  id="mail" name="adminEmail"/>
       </div>
-      <button class="custom-btn" name="log">تسجيل الدخول</button>
+      <button class="custom-btn" name="log">登录 </button>
     </form>
   </div>
     <div class="lo">
