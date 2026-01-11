@@ -14,7 +14,7 @@
 </script>
 <script>
     $('.confirm').click(function() {
-        return confirm("هل أنت متأكد ؟");
+        return confirm("你确定吗？ ");
     });
 </script>
 </body>
